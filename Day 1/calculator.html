@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="icon" type="image" href="calculator-transparent-free-png.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <h1 id="scie">Calculator</h1>
+
+    <div class="you">
+        <form name="form1">
+            <input type="text" name="cal" id="calc"><br>
+
+            <input type="button" value="1" onclick="form1.cal.value+='1'">
+            <input type="button" value="2" onclick="form1.cal.value+='2'">
+            <input type="button" value="3" onclick="form1.cal.value+='3'">
+            <input type="button" value="+" onclick="form1.cal.value+='+'"><br>
+            <input type="button" value="4" onclick="form1.cal.value+='4'">
+            <input type="button" value="5" onclick="form1.cal.value+='5'">
+            <input type="button" value="6" onclick="form1.cal.value+='6'">
+            <input type="button" value="-" onclick="form1.cal.value+='-'"><br>
+            <input type="button" value="7" onclick="form1.cal.value+='7'">
+            <input type="button" value="8" onclick="form1.cal.value+='8' ">
+            <input type="button" value="9" onclick="form1.cal.value+='9'">
+            <input type="button" value="*" onclick="form1.cal.value+='*'"><br>
+            <input type="button" value="." onclick="form1.cal.value+='.'">
+            <input type="button" value="0" onclick="form1.cal.value+='0'">
+            <input type="button" value="/" onclick="form1.cal.value+='/'">
+            <input type="button" value="=" onclick="form1.cal.value=eval(form1.cal.value)"><br>
+
+            <input type="button" id="cl" value="CLEAR" onclick="form1.cal.value=' '">
+            <input type="button" id="de" value="<" onclick="form1.cal.value=form1.cal.value.slice(0,-1)">
+
+        </form>
+    </div>
+</body>
+
+</html>
